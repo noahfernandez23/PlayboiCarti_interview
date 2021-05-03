@@ -1,0 +1,289 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face{
+	src: url("project_fonts/Bluu_Next/BluuNext-Bold.otf");
+	font-family: blu;
+	
+	src: url("project_fonts/Archivo_Narrow/ArchivoNarrow-Regular.ttf");
+	font-family: archivo;
+		
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+	font-family: blu;
+
+
+}
+
+body {
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+	padding: 0px 5px;
+	width: 60px;
+}
+
+h1{
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+	font-size: 20px;
+	font-family: archivo;
+}
+
+img {
+  width: 100%;
+
+}
+
+.navbar {
+  background-color: black;
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+	
+
+
+.container{
+	max-width: 1500px;
+	margin: 0 auto;
+	overflow: auto;
+	padding: 0 40px;
+	
+}
+
+.flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+
+}
+
+h2{
+	text-align: center;
+	font-size: 40px;
+	color: black;
+	background-color:#EFEFEF;
+	font-family: blu;
+	line-height: 1.2;	
+	
+}
+
+h3{
+	text-align: center;
+	font-size: 25px;
+	font-family: blu;
+	
+}
+
+
+.special{
+	color: #3C0708;
+	font-size: 45px;
+	font-family: blu;
+	
+}
+
+.container-2{
+	padding: 5% 4%;
+	max-width: 1600px;
+	overflow: auto;	
+}
+
+.intro{
+	padding-bottom: 80px;
+	font-size: 27px;
+}
+
+.carti-images{
+	width: 40%;
+	min-width: 350px;
+	float: right;
+	padding: 10px 20px;
+}
+
+.carti-images-spec{
+	width: 100%;
+	padding: 60px 20px;
+	max-width: 1400px;
+	
+
+}
+
+.carti-spotify{
+	width: 100%;
+	max-width: 900px;
+	height: 500px;
+	padding: 30px 0px;
+	
+}
+
+footer{
+	background-color: black;
+	overflow: hidden;
+	color: white;
+	z-index: 100;
+	
+}
+
+.socials{
+		margin: 0 auto;
+	overflow: auto;
+	padding: 0 40px;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	
+}
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #9F0C0C;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+
+}
+
+/* Style the container */
+.container-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+	max-width: 800px;
+	margin: 50px auto;
+	overflow: auto;
+	padding: 30px 40px;
+	
+	
+	
+
+	
+}
+
+
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (max-width: 700px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+.navbar{
+	height: 110px;
+}
+
+
+.navbar .flex{
+	flex-direction: column;
+}
+
+.navbar ul{
+	padding: 10px;
+	background-color: #460F10;
+	}
+	
+	
+	p{
+		font-size: 19px;
+	}
+	
+	h2{
+		font-size: 30px;
+	}
+	
+	.special{
+		font-size: 35px;
+	}	
+	
+	
+	.intro{
+		font-size: 22px;
+	}
+	
+	a{
+		width: 40px;
+	}
+
+	h3{
+		font-size: 20px;
+		padding: 10px;
+	}
+}
